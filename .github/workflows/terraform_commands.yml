@@ -62,5 +62,5 @@ jobs:
     - run: terraform plan -out tfplan
       working-directory: ${{ inputs.working_dir }}
   
-    - run: terraform apply
+    - run: terraform apply -auto-approve
       working-directory: ${{ inputs.working_dir }}
