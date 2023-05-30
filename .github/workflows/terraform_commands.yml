@@ -61,3 +61,6 @@ jobs:
 #Terraform Sub commnads
     - run: terraform plan
       working-directory: ${{ inputs.working_dir }}
+  
+    - run: terraform apply
+      working-directory: ${{ inputs.working_dir }}
