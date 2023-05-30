@@ -13,6 +13,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "example"
+  name     = "New_resource_group"
   location = "West Europe"
 }
