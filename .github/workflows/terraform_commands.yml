@@ -5,10 +5,10 @@ on:
    inputs:
       working_dir:
         description: 'Path of working directory' 
-        default: .
         required: true
         type: choice
         options: 
+        - ./
         - ./app_insight
         - ./app_service
         - ./key-vault
@@ -59,7 +59,7 @@ jobs:
       working-directory: ${{ inputs.working_dir }}
 
 #Terraform Sub commnads
-    - run: terraform plan
+    - run: terraform plan -out tfplan
       working-directory: ${{ inputs.working_dir }}
   
     - run: terraform apply
