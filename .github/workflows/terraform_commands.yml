@@ -4,11 +4,18 @@ on:
   workflow_dispatch:
    inputs:
       working_dir:
-        description: 'Path of working directory'
-        type: string
-        default: .      
+        description: 'Path of working directory' 
+        default: .
         required: true
-         
+        type: choice
+        options: 
+        - ./app_insight
+        - ./app_service
+        - ./key-vault
+        - ./resource_group
+        - ./storage_blob_container
+        - ./webapp
+        
 
 
 #For Az login
