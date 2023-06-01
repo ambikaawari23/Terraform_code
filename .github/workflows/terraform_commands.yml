@@ -15,6 +15,7 @@ on:
         - ./resource_group
         - ./storage_blob_container
         - ./webapp
+        - ./adf
         
 
 
